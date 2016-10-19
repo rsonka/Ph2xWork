@@ -1,0 +1,44 @@
+'''Rita Sonka
+10/11/2016
+Ph 20
+hw 3
+'''
+import numpy as np
+
+
+def explicitEuler(x0, v0, h, N):
+    XX = np.zeros([N+1])
+    VV = np.zeros([N+1])
+    for i in range(len(N)):
+        XX.append(
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
