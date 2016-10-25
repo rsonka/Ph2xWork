@@ -1,0 +1,34 @@
+'''Rita Sonka
+10/24/2016
+Ph 20
+hw 4
+'''
+
+import numericalSpring as nS
+
+
+graphicsFolder = "../week3Graphics/"
+
+# Figure 1
+nS.plotExplicitEuler(0, 5, .2, 100, graphicsFolder + "explicitEuler1.pdf")
+# Figure 2
+nS.plotExplicitEulerErrors(0, 5, .2, 100, graphicsFolder + "explicitEulerErrors1.pdf")
+# Figure 3
+nS.eE_truncation(0, 5, .04, 20, graphicsFolder + "eE_truncation.pdf")
+# Figure 4
+nS.eE_energy(0, 5, .2, 100, graphicsFolder + "eE_energy.pdf")
+# Figure 5
+nS.plotImplicitEuler(0, 5, .2, 100, graphicsFolder + "implicitEuler1.pdf")
+# Figure 6
+nS.plotImplicitEulerErrors(0, 5, .2, 100, graphicsFolder + "implicitEulerErrors1.pdf")
+# Figure 7
+nS.iE_energy(0, 5, .2, 100, graphicsFolder + "iE_energy.pdf")
+# Figure 8 (actually two files)
+nS.eE_iE_phaseSpace(0, 5, .2, 100, graphicsFolder + "eE_phaseSpace.pdf", graphicsFolder + "iE_phaseSpace.pdf")
+# Figure 9
+nS.symp_phaseSpace(0, 5, .2, 100, graphicsFolder + "symp_phaseSpace.pdf")
+# Figure 10
+nS.symp_energy(0, 5, .2, 100, graphicsFolder + "symp_energy.pdf")
+# Figure 11
+nS.symp_lag(0, 5, .2, 1000, graphicsFolder + "symp_lag.pdf")
+
