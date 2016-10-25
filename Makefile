@@ -5,11 +5,13 @@ GF = week3Graphics/
 GG = plotGenerationScripts/
 
 
-week3report.pdf : week3report.tex $(GG)*
+week3report.pdf : week3report.tex $(GG)* versionControlLog
 	pdflatex $^
 
 $(GG)%.py : 
 	python $@ $(GF)
 
-
+.PHONY: versionControlLog
+versionControlLog : 
+	git log > versionControlLog.txt
 
